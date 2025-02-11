@@ -14,4 +14,4 @@ Enlace hacia el reporte
 La voz humana genera vibraciones que viajan en ondas sonoras, las palabras tiene una combinación de frecuencias y amplitudes. Un micrófono capta estas señales y la convierte en señales analógicas. Posteriormente un convertidor de señales análogas a digitales (ADC) transforma estas señales en datos binarios para que puedan ser procesados por la computadora. Posteriormente, se descomponen los datos de audio en sonidos y mediante algoritmos  de procesamiento de lenaguaje natural y redes neuronales se encuentra la palabra más probable que se ajuste al audio.
 ![PDF](imagenes/flujo.avif)
 ### Text to Speech
-El TTS es un proceso que convierte el texto en voz usando técnicas de procesamiento de lenguaje natural (NLP) y síntesis de voz. 
+El TTS es un proceso que convierte el texto en voz usando técnicas de procesamiento de lenguaje natural (NLP) y síntesis de voz. Se realiza una análisis de texto que normaliza la información que garantiza que el texto esté en un formato adecuado para el procesamiento. Luego, se lleva a cabo un análisis lingüistico descomponiendo el texto gramaticalmente para determinar la entonación y fluidez. 
