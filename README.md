@@ -25,5 +25,59 @@ El TTS es un proceso que convierte el texto en voz usando técnicas de procesami
 - Análisis avanzado de conversaciones : Aplicar procesamiento de lenguaje natural (NLP) con spaCy o NLTK para detectar emociones y patrones en las conversaciones.
 
 ## Instalación de dependencias
-Para la elaboración del proyecto se usó Anaconda y se fueorn instalando las dependencias una por una. Sin embargo, se pueden instalar usando requirements, ejecuta el siguiente comano : 
+Para la elaboración del proyecto se usó Anaconda y se fueorn instalando las dependencias una por una. Sin embargo, se pueden instalar usando requirements, ejecuta el siguiente comando : 
+```bash
+pip install -r requirements.txt
+```
 
+## COnfiguración de key de OPEN AI 
+### Uso de dotenv
+
+Para utilizar el chatbot con la API de OpenAI, es necesario configurar una **variable de entorno** para almacenar la clave de acceso de manera segura.
+
+### **1️⃣ Crear un archivo `.env`**
+En la raíz del proyecto, crea un archivo llamado `.env` y agrega la siguiente línea:
+⚠️ **Nota:** Reemplaza `tu_api_key_aqui` con tu clave real de OpenAI.
+```bash
+OPENAI_API_KEY=“tu_api_key_aqui”
+```
+---
+
+### **2️⃣ Instalar la librería `python-dotenv` (si aún no está instalada)**
+Para cargar las variables de entorno en Python, instala `python-dotenv` con el siguiente comando:
+
+```bash
+pip install python-dotenv
+```
+Después agrega las siguentes lineas a consultar_api.py
+```python
+from dotenv import load_dotenv
+
+# Cargar variables de entorno desde .env
+load_dotenv()
+```
+### 🔐 Configuración de la API Key de OpenAI en `.bash_profile` (macOS/Linux)
+### **1️⃣ Abrir el archivo `.bash_profile` o `.bashrc`**
+Dependiendo de tu sistema, ejecuta uno de estos comandos en la terminal:
+
+```bash
+nano ~/.bash_profile   # Para macOS (Bash)
+nano ~/.bashrc         # Para Linux (Bash)
+nano ~/.zshrc          # Para macOS con Zsh (MacOS Catalina en adelante)
+```
+Agrega la siguiente línea dentro del archivo:
+```bash
+export OPENAI_API_KEY="tu_api_key_aqui"
+```
+Guarda y sal y ejecuta el siguiente comando : 
+```bash
+source ~/.bash_profile   # Para macOS (Bash)
+source ~/.bashrc         # Para Linux (Bash)
+source ~/.zshrc          # Para macOS con Zsh
+```
+## Ejecución del programa
+Para ejecutar el programa, usa el siguiente comando en la terminal:
+
+```bash
+python app.py
+```
