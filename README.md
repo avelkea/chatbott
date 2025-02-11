@@ -12,9 +12,15 @@ Enlace hacia el reporte
 ## Funcionamiento
 ### Speech to text
 La voz humana genera vibraciones que viajan en ondas sonoras, las palabras tiene una combinación de frecuencias y amplitudes. Un micrófono capta estas señales y la convierte en señales analógicas. Posteriormente un convertidor de señales análogas a digitales (ADC) transforma estas señales en datos binarios para que puedan ser procesados por la computadora. Posteriormente, se descomponen los datos de audio en sonidos y mediante algoritmos  de procesamiento de lenaguaje natural y redes neuronales se encuentra la palabra más probable que se ajuste al audio.
-![PDF](imagenes/flujo.avif)
+![flujostt](imagenes/flujo.avif)
 ### Text to Speech
 El TTS es un proceso que convierte el texto en voz usando técnicas de procesamiento de lenguaje natural (NLP) y síntesis de voz. Se realiza una análisis de texto que normaliza la información que garantiza que el texto esté en un formato adecuado para el procesamiento. Luego, se lleva a cabo un análisis lingüistico descomponiendo el texto gramaticalmente para determinar la entonación y fluidez. Después, se usa un modelo de síntesis como Tacotron 2, lo que transforma la información en un espectrograma mel. Esta es una iamgen que representa la variación de las frecuencias de sonido a lo largo del tiempo. Finalmente, este espectrograma es procesado por un vocoder lo que genera el audio producido.
 
-![PDF](imagenes/tts.png)
+![tts](imagenes/tts.png)
 
+## Posibles mejoras 
+- Autenticación de usuarios : Implementar login y registro con JWT o Flask-Login para que cada usuario tenga su historial de conversaciones privado.
+- Uso de WebSockets para comunicación en tiempo real ⚡: Reemplazar Server-Sent Events (SSE) por Flask-SocketIO para mejorar la velocidad de respuesta y reducir latencia.
+- Mejoras en la base de datos : Migrar de SQLite a PostgreSQL o MySQL para manejar más usuarios y mejorar escalabilidad. Igualmente, quedó por concluir la programación del guardado de chats y mensajes, por el momento solo guarda mensajes. 
+- Análisis avanzado de conversaciones : Aplicar procesamiento de lenguaje natural (NLP) con spaCy o NLTK para detectar emociones y patrones en las conversaciones.
+  
