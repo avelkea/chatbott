@@ -20,7 +20,10 @@ El TTS es un proceso que convierte el texto en voz usando técnicas de procesami
 
 ## Posibles mejoras 
 - Autenticación de usuarios : Implementar login y registro con JWT o Flask-Login para que cada usuario tenga su historial de conversaciones privado.
-- Uso de WebSockets para comunicación en tiempo real ⚡: Reemplazar Server-Sent Events (SSE) por Flask-SocketIO para mejorar la velocidad de respuesta y reducir latencia.
+- Uso de WebSockets para comunicación en tiempo real : Reemplazar Server-Sent Events (SSE) por Flask-SocketIO para mejorar la velocidad de respuesta y reducir latencia.
 - Mejoras en la base de datos : Migrar de SQLite a PostgreSQL o MySQL para manejar más usuarios y mejorar escalabilidad. Igualmente, quedó por concluir la programación del guardado de chats y mensajes, por el momento solo guarda mensajes. 
 - Análisis avanzado de conversaciones : Aplicar procesamiento de lenguaje natural (NLP) con spaCy o NLTK para detectar emociones y patrones en las conversaciones.
-  
+
+## Instalación de dependencias
+Para la elaboración del proyecto se usó Anaconda y se fueorn instalando las dependencias una por una. Sin embargo, se pueden instalar usando requirements, ejecuta el siguiente comano : 
+
