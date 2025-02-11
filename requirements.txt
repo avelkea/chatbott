@@ -1,0 +1,9 @@
+flask
+openai
+pandas
+matplotlib
+reportlab
+speechrecognition
+gtts
+pygame
+flask-socketio
